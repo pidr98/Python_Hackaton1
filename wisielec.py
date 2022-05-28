@@ -37,9 +37,7 @@ def game(word):
                     guessed = True
 
         elif len(guess) == len(word) and guess.isalpha():
-            if guess in guessed_words:
-                print("You already guessed the word", guess)
-            elif guess not in word:
+            if guess not in word:
                 print(guess, "is not the word.")
                 tries -= 1
                 print(f'Tries left: {tries}')
