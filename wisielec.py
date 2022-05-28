@@ -55,7 +55,6 @@ def game(word):
         print(f'You lost, the word was:{word}')
 
 
-
 def main():
     word = get_word()
     game(word)
